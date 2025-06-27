@@ -13,6 +13,8 @@
 
     This is a placeholder for base href that will be replaced by the value of
     the `--base-href` argument provided to `flutter build`.
+    <base href="/"> //FOR DEBUG IN FLUTTER
+    <base href="./"> //FOR BUILD
   -->
   <base href="./">
 
@@ -34,7 +36,26 @@
 
   <script>
     // The value below is injected by flutter build, do not touch.
-    const serviceWorkerVersion = "2269702540";
+    const serviceWorkerVersion = "219471498";
+  </script>
+  <!-- Yandex.RTB -->
+  <script>window.yaContextCb=window.yaContextCb||[]</script>
+  <script src="https://yandex.ru/ads/system/context.js" async></script>
+  <script type="text/javascript">
+    function showYandexFullscreenAd() {
+     if (window.yaContextCb) {
+     console.log('Yandex context READY.')
+       window.yaContextCb.push(() => {
+         Ya.Context.AdvManager.render({
+           "blockId": "R-A-16043655-1",
+           "type": "fullscreen",
+           "platform": "touch"
+         });
+       });
+     } else {
+       console.log('Yandex context not ready.');
+     }
+   }
   </script>
   <!-- This script adds the flutter initialization JS code -->
   <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
