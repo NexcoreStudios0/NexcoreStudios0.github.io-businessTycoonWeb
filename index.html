@@ -16,7 +16,7 @@
     <base href="/"> //FOR DEBUG IN FLUTTER
     <base href="./"> //FOR BUILD
   -->
-  <base href="./">
+  <base href="/">
 
   <meta charset="UTF-8">
   <meta content="IE=Edge" http-equiv="X-UA-Compatible">
@@ -36,27 +36,11 @@
 
   <script>
     // The value below is injected by flutter build, do not touch.
-    const serviceWorkerVersion = "4028190191";
+    const serviceWorkerVersion = "2231136901";
   </script>
   <!-- Yandex.RTB -->
   <script>window.yaContextCb=window.yaContextCb||[]</script>
   <script src="https://yandex.ru/ads/system/context.js" async></script>
-  <script type="text/javascript">
-    function showYandexFullscreenAd() {
-     if (window.yaContextCb) {
-     console.log('Yandex context READY.')
-       window.yaContextCb.push(() => {
-         Ya.Context.AdvManager.render({
-           "blockId": "R-A-16043655-1",
-           "type": "fullscreen",
-           "platform": "touch"
-         });
-       });
-     } else {
-       console.log('Yandex context not ready.');
-     }
-   }
-  </script>
   <!-- This script adds the flutter initialization JS code -->
   <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
   <script src="https://telegram.org/js/telegram-web-app.js"></script>
@@ -64,6 +48,22 @@
   <script src="flutter.js" defer></script>
 </head>
 <body>
+ <script type="text/javascript">
+  function showYandexFullscreenAd() {
+   if (window.yaContextCb) {
+   console.log('Yandex context READY.')
+     window.yaContextCb.push(() => {
+       Ya.Context.AdvManager.render({
+         "blockId": "R-A-16047670-2",
+         "type": "fullscreen",
+         "platform": "touch"
+       });
+     });
+   } else {
+     console.log('Yandex context not ready.');
+   }
+ }
+</script>
   <script>
     window.addEventListener('load', function(ev) {
       // Download main.dart.js
