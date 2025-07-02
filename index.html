@@ -34,9 +34,34 @@
   <title>businesstycoonrealistic</title>
   <link rel="manifest" href="manifest.json">
 
+  <script type="module">
+
+    import { initializeApp } from "firebase/app";
+    import { getAnalytics } from "firebase/analytics";
+    // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
+
+    // Your web app's Firebase configuration
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    const firebaseConfig = {
+      apiKey: "AIzaSyBqmq4onhZdZAq0mhmlzbsFSxUamn_6urk",
+      authDomain: "businesstycoonclicker.firebaseapp.com",
+      projectId: "businesstycoonclicker",
+      storageBucket: "businesstycoonclicker.firebasestorage.app",
+      messagingSenderId: "911675073837",
+      appId: "1:911675073837:web:9991565967299d296c1fa4",
+      measurementId: "G-FTS5QM7RZX"
+    };
+
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    const analytics = getAnalytics(app);
+
+  </script>
+
   <script>
     // The value below is injected by flutter build, do not touch.
-    const serviceWorkerVersion = "1828957077";
+    const serviceWorkerVersion = "3044403004";
   </script>
   <!-- Yandex.RTB -->
   <script>window.yaContextCb=window.yaContextCb||[]</script>
